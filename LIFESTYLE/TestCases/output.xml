@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230801 16:09:20.981" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcases" source="C:\Users\sival\Desktop\LIFESTYLE\TestCases\testcases.robot">
+<test id="s1-t1" name="test myntra launch" line="6">
+<kw name="open myntra" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${web}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230801 16:09:22.562" level="INFO">Opening browser 'googlechrome' to base url 'https://www.myntra.com/'.</msg>
+<msg timestamp="20230801 16:09:23.261" level="INFO">Executing: C:\Users\sival\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<msg timestamp="20230801 16:10:55.220" level="WARN">Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)</msg>
+<msg timestamp="20230801 16:12:38.214" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230801 16:12:38.215" level="FAIL">WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0079A813+48355]
+	(No symbol) [0x0072C4B1]
+	(No symbol) [0x00635358]
+	(No symbol) [0x00655714]
+	(No symbol) [0x00651DA1]
+	(No symbol) [0x00650579]
+	(No symbol) [0x00680C55]
+	(No symbol) [0x0068093C]
+	(No symbol) [0x0067A536]
+	(No symbol) [0x006582DC]
+	(No symbol) [0x006593DD]
+	GetHandleVerifier [0x009FAABD+2539405]
+	GetHandleVerifier [0x00A3A78F+2800735]
+	GetHandleVerifier [0x00A3456C+2775612]
+	GetHandleVerifier [0x008251E0+616112]
+	(No symbol) [0x00735F8C]
+	(No symbol) [0x00732328]
+	(No symbol) [0x0073240B]
+	(No symbol) [0x00724FF7]
+	BaseThreadInitThunk [0x77A500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7AEE+238]
+</msg>
+<status status="FAIL" starttime="20230801 16:09:22.560" endtime="20230801 16:13:52.098"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.099" endtime="20230801 16:13:52.099"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.100" endtime="20230801 16:13:52.100"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver.chrome.options'].Options()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.101" endtime="20230801 16:13:52.101"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-notifications</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.104" endtime="20230801 16:13:52.104"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.105" endtime="20230801 16:13:52.105"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menssection}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.106" endtime="20230801 16:13:52.106"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.107" endtime="20230801 16:13:52.107"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${discount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.107" endtime="20230801 16:13:52.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.108" endtime="20230801 16:13:52.108"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>discounts are visible</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.109" endtime="20230801 16:13:52.109"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.110" endtime="20230801 16:13:52.110"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.115" endtime="20230801 16:13:52.115"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${searchbar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.117" endtime="20230801 16:13:52.117"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.121" endtime="20230801 16:13:52.122"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${searchbar}</arg>
+<arg>marvelcomics</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.122" endtime="20230801 16:13:52.122"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.123" endtime="20230801 16:13:52.123"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${searchbar}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.123" endtime="20230801 16:13:52.123"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.123" endtime="20230801 16:13:52.124"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menradiobutton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.124" endtime="20230801 16:13:52.124"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.124" endtime="20230801 16:13:52.124"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${souledstore}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.124" endtime="20230801 16:13:52.124"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.125" endtime="20230801 16:13:52.125"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.125" endtime="20230801 16:13:52.125"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.125" endtime="20230801 16:13:52.125"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.126" endtime="20230801 16:13:52.126"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${size}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.126" endtime="20230801 16:13:52.126"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.441" endtime="20230801 16:13:52.442"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${scrollview}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.442" endtime="20230801 16:13:52.442"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.443" endtime="20230801 16:13:52.443"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${bag}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.444" endtime="20230801 16:13:52.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.444" endtime="20230801 16:13:52.444"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Gotobag}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.445" endtime="20230801 16:13:52.445"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.446" endtime="20230801 16:13:52.446"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${elementvisible}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.447" endtime="20230801 16:13:52.447"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.447" endtime="20230801 16:13:52.448"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Element is visible</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.448" endtime="20230801 16:13:52.448"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.449" endtime="20230801 16:13:52.449"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${gotit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.450" endtime="20230801 16:13:52.450"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.450" endtime="20230801 16:13:52.451"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.451" endtime="20230801 16:13:52.451"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.453" endtime="20230801 16:13:52.454"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${wishlist}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.454" endtime="20230801 16:13:52.454"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.455" endtime="20230801 16:13:52.455"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${mobilenum}</arg>
+<arg>8801263346</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.456" endtime="20230801 16:13:52.456"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.456" endtime="20230801 16:13:52.457"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.457" endtime="20230801 16:13:52.457"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1m</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.458" endtime="20230801 16:13:52.458"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${size}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.459" endtime="20230801 16:13:52.459"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.459" endtime="20230801 16:13:52.459"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${bag}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.460" endtime="20230801 16:13:52.460"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.461" endtime="20230801 16:13:52.461"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Gotobag}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.461" endtime="20230801 16:13:52.462"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.462" endtime="20230801 16:13:52.462"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${gotit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.463" endtime="20230801 16:13:52.463"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.463" endtime="20230801 16:13:52.464"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${remove}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.464" endtime="20230801 16:13:52.464"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.465" endtime="20230801 16:13:52.465"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${confirmremoving}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.466" endtime="20230801 16:13:52.466"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.466" endtime="20230801 16:13:52.466"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${logo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230801 16:13:52.467" endtime="20230801 16:13:52.467"/>
+</kw>
+<status status="FAIL" starttime="20230801 16:09:22.559" endtime="20230801 16:13:52.469"/>
+</kw>
+<status status="FAIL" starttime="20230801 16:09:22.557" endtime="20230801 16:13:52.472">WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0079A813+48355]
+	(No symbol) [0x0072C4B1]
+	(No symbol) [0x00635358]
+	(No symbol) [0x00655714]
+	(No symbol) [0x00651DA1]
+	(No symbol) [0x00650579]
+	(No symbol) [0x00680C55]
+	(No symbol) [0x0068093C]
+	(No symbol) [0x0067A536]
+	(No symbol) [0x006582DC]
+	(No symbol) [0x006593DD]
+	GetHandleVerifier [0x009FAABD+2539405]
+	GetHandleVerifier [0x00A3A78F+2800735]
+	GetHandleVerifier [0x00A3456C+2775612]
+	GetHandleVerifier [0x008251E0+616112]
+	(No symbol) [0x00735F8C]
+	(No symbol) [0x00732328]
+	(No symbol) [0x0073240B]
+	(No symbol) [0x00724FF7]
+	BaseThreadInitThunk [0x77A500C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7AEE+238]
+</status>
+</test>
+<status status="FAIL" starttime="20230801 16:09:21.011" endtime="20230801 16:13:52.490"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcases">Testcases</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230801 16:10:55.220" level="WARN">Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)</msg>
+</errors>
+</robot>
